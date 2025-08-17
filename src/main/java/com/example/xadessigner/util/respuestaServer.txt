@@ -1,0 +1,44 @@
+14:46:59.620 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - === INICIA OBTENCION CADENA COMPLETA DE CERTIFICADOS ===
+14:46:59.620 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - KeyStore: OK, Alias: C=CO,ST=BOGOTA D.C.,L=BOGOTA,O=ADMINISTRACION,OU=Emitido por Andes SCD Ac 26 69 C 03 Torre B Of 701,2.5.4.12=#132d456d69736f72204661637475726120456c656374726f6e696361202d20506572736f6e61204a75726964696361,2.5.4.5=#130a39303034313535303331,CN=MARINO S BAR PESCADERO RESTAURANTE SAS,1.2.840.113549.1.9.1=#161a4544454c4d4952412e4d4152494e4f5340474d41494c2e434f4d,STREET=CLL 116 60 85
+14:46:59.621 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Elemento SigningCertificate creado
+14:46:59.621 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - ? INTENTANDO RECARGAR KEYSTORE PARA OBTENER CADENA
+14:46:59.628 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? KeyStore recargado exitosamente
+14:46:59.628 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - KeyStore size despuÚs de cargar: 1
+14:46:59.628 [http-nio-8080-exec-1] ERROR c.e.x.service.XadesEpesSignerService - ? Alias 'C=CO,ST=BOGOTA D.C.,L=BOGOTA,O=ADMINISTRACION,OU=Emitido por Andes SCD Ac 26 69 C 03 Torre B Of 701,2.5.4.12=#132d456d69736f72204661637475726120456c656374726f6e696361202d20506572736f6e61204a75726964696361,2.5.4.5=#130a39303034313535303331,CN=MARINO S BAR PESCADERO RESTAURANTE SAS,1.2.840.113549.1.9.1=#161a4544454c4d4952412e4d4152494e4f5340474d41494c2e434f4d,STREET=CLL 116 60 85' no encontrado en KeyStore recargado
+14:46:59.629 [http-nio-8080-exec-1] WARN  c.e.x.service.XadesEpesSignerService - ??  Usando solo certificado firmante...
+14:46:59.629 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - ? Procesando cadena con 1 certificados
+14:46:59.629 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Agregando certificado 1 a la cadena
+14:46:59.629 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService -   Subject: C=CO,ST=BOGOTA D.C.,L=BOGOTA,O=ADMINISTRACION,OU=Emitido por Andes SCD Ac 26 69 C 03 Torre B Of 701,2.5.4.12=#132d456d69736f72204661637475726120456c656374726f6e696361202d20506572736f6e61204a75726964696361,2.5.4.5=#130a39303034313535303331,CN=MARINO S BAR PESCADERO RESTAURANTE SAS,1.2.840.113549.1.9.1=#161a4544454c4d4952412e4d4152494e4f5340474d41494c2e434f4d,STREET=CLL 116 60 85
+14:46:59.630 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService -   Issuer: C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v3,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f
+14:46:59.630 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService -    Serial:  8870739079482131451
+14:46:59.630 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Certificado 1 agregado correctamente
+14:46:59.630 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - ? Certificado 1 agregado exitosamente
+14:46:59.631 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - ? CADENA COMPLETA DE CERTIFICADOS AGREGADA (1 certificados)
+14:46:59.631 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - SignaturePolicyIdentifier agregado
+14:46:59.631 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - SignerRole agregado
+14:46:59.631 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Agregando referencia a SignedInfo
+14:46:59.633 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Elemento a digerir: <xades:SignedProperties Id="xmldsig-b90c9ae0-01c3-432a-9776-752fa3d7d342-signedprops" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"><xades:SignedSignatureProperties><xades:SigningTime>2025-08-02T14:46:59.620-05:00</xades:SigningTime><SigningCertificate xmlns="http://uri.etsi.org/01903/v1.3.2#"><Cert><CertDigest><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" xmlns="http://www.w3.org/2000/09/xmldsig#"/><DigestValue xmlns="http://www.w3.org/2000/09/xmldsig#">y53T4mXTzFtX6PM5QDVhuDdTJ5iT7OTkcggUFZ6E288=</DigestValue></CertDigest><IssuerSerial><IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v3,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</IssuerName><SerialNumber>8870739079482131451</SerialNumber></IssuerSerial></Cert></SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://www.dian.gov.co/politicasdefirma</xades:Identifier></xades:SigPolicyId></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>Firmante</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties>
+14:46:59.633 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Digest calculado y asignado: gicaPWAsgC+6y8XWXA19Gw+RlreHzwm+OXiSjGzRdZQ=
+14:46:59.633 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Referencia KeyInfo manual agregada con digest calculado: URI=#xmldsig-b90c9ae0-01c3-432a-9776-752fa3d7d342-signedprops
+14:46:59.633 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Referencia a SignedProperties agregada con ID: xmldsig-b90c9ae0-01c3-432a-9776-752fa3d7d342-signedprops
+14:46:59.633 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Elementos XAdES EPES agregados
+14:46:59.634 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Iniciando limpieza de namespaces...
+14:46:59.634 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Limpiando namespaces de Signature...
+14:46:59.634 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - Configurando prefijos...
+14:46:59.635 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Namespaces declarados en elemento raÝz
+14:46:59.635 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Limpieza de namespaces completada
+14:46:59.636 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Namespaces limpiados despuÚs de crear elementos
+14:46:59.674 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - Firma calculada correctamente
+14:46:59.675 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - ? Convirtiendo documento a string...
+14:46:59.675 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Elemento raÝz: Invoice
+14:46:59.679 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Transformaci¾n completada, longitud antes de limpieza: 15927
+14:46:59.681 [http-nio-8080-exec-1] INFO  c.e.x.service.XadesEpesSignerService - ? XML generado correctamente, longitud final: 14213
+14:46:59.681 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - ? Primeros 200 caracteres: <?xml version="1.0" encoding="UTF-8" standalone="no"?><Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateCom
+14:46:59.682 [http-nio-8080-exec-1] DEBUG c.e.x.service.XadesEpesSignerService - XML firmado generado correctamente, longitud: 14213
+14:46:59.682 [http-nio-8080-exec-1] INFO  c.e.x.controller.SignatureController - ? Proceso completado - Success: true, Message: XML firmado correctamente
+14:46:59.682 [http-nio-8080-exec-1] INFO  c.e.x.controller.SignatureController - ? XML firmado generado, longitud: 14213
+14:46:59.682 [http-nio-8080-exec-1] DEBUG c.e.x.controller.SignatureController - ? Contenido (primeros 200 chars): <?xml version="1.0" encoding="UTF-8" standalone="no"?><Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateCom
+14:46:59.682 [http-nio-8080-exec-1] INFO  c.e.x.controller.SignatureController - === FIN SOLICITUD FIRMA XAdES EPES ===
+14:46:59.701 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+14:46:59.704 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [SignResponse{signedXml='14213 chars', success=true, message='XML firmado correctamente'}]
+14:46:59.716 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

@@ -1,0 +1,23 @@
+# src/main/resources/application.yml
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: xades-signer-api
+
+# Configuración del certificado (debe ser personalizada)
+certificate:
+  path: certificates/Certifica.p12
+  password: 9Ep3KxPRph
+  alias: marino s bar pescadero restaurante sas
+
+logging:
+  level:
+    com.example.xadessigner: DEBUG
+    org.springframework.web: DEBUG
+    org.apache.xml.security: INFO
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n'
